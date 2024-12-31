@@ -1,0 +1,11 @@
+{
+  "name": "projetoquiz-github",
+  "version": "1.0.0",
+  "main": "script.js",
+  "scripts": {
+    "build": "npx tailwindcss -i ./src/input.css -o ./src/output.css --watchn"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

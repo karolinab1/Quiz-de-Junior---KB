@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+    @apply bg-gradient-to-b from-gray-700 via-rose-500 to-orange-400
+
+}
+
+body * {
+    @apply font-sans
+}

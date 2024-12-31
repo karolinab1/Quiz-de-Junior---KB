@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/javascript">
+    <title>Quiz de Junior - KB</title>
+
+    <link href="./output.css" rel="stylesheet">
+    <link href="/style.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+
+
+
+<div class="container">
+
+    <div class="tela-inicial" id = "tela-inicial"> <br>
+
+        <h1 class = "title-inicial">Bem-vindo ao Meu Quiz de Programação Junior! 🎉</h1> <br>
+        <p class = "subtitle-inicial">Que tal testar seus conhecimentos e descobrir até onde vai o seu 
+        domínio em programação? Será que você já deixou de ser um junior e nem percebeu? 😂</p> <br>
+        <button id = "comecar" onclick="comecar()">Começar</button> <br>
+        <img class = "img-telainicial" src = "/images/img-inicial.svg"> <br> 
+        
+    </div>
+
+    <div id="tela-perguntas">
+
+    <div class="title">
+        <h1 id = "titulo"></h1>
+        <h2 id = "subtitulo"></h2>
+    </div>
+    
+    <div class="alternativas" id = "containerAlternativas">
+        <label for="alternativa1" id = "alternativaLabel1">
+            <input type = "radio" name = "opcao" value="A" id = "alternativa1" >
+        </label>
+        <label for="alternativa2" id = "alternativaLabel2">
+            <input type = "radio" name = "opcao" value="B" id = "alternativa2">
+        </label>
+        <label for="alternativa3" id = "alternativaLabel3">
+            <input type = "radio" name = "opcao" value="C" id = "alternativa3">
+        </label>
+        
+        <label for="alternativa4" id = "alternativaLabel4">
+            <input type = "radio" name = "opcao" value="D" id = "alternativa4">
+        </label>
+        
+    </div>
+
+    
+    <div class = "containerButtons" id = "containerButtons"> 
+    <div id ="buttons">
+        <button id = "voltar" onclick="voltar()">Voltar</button>
+        <button id = "proximo" onclick="proximo()">Próximo</button>
+    </div>
+    </div>
+    
+    </div>
+
+    <div id="containerFinal">
+        <div id="tela-final">
+            <h2 id = "tituloFinal"></h2>
+            <p id = "pontuacao"></p>
+            <div class = "buttonReiniciar">
+            <button id = "reiniciar" onclick="reiniciar()">Reiniciar</button>
+            
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+
+<script src = "/script.js" type = "module"></script>
+</body>
+</html>
